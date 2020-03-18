@@ -1,0 +1,31 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend using postgreSQL deployed through aws",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dev-Tracker/backend.git"
+  },
+  "author": "Matthew Bedard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dev-Tracker/backend/issues"
+  },
+  "homepage": "https://github.com/Dev-Tracker/backend#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "gitignore": "^0.6.0",
+    "helmet": "^3.21.3",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.20.11",
+    "pg": "^7.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
