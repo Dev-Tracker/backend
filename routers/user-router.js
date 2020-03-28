@@ -26,7 +26,10 @@ router.post("/register", (req, res) => {
   user
     .register(credentials)
     .then(newUser => {
-      res.status(201).json({ message: "Welcome, thank you for joining!" });
+      const token = tokenGenerator(user);
+      res
+        .status(201)
+        .json({ message: "Welcome, thank you for joining!", token: token });
     })
     .catch(err => {
       console.log("error", err);
